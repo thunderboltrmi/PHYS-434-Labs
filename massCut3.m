@@ -14,7 +14,7 @@ for i=1:hNewLength
         end
 end
 for i=1:qNewLength
-        if (q(i)>=qLambda-t)&&(h(i)<=qLambda+t)
+        if (q(i)>=qLambda-t)&&(q(i)<=qLambda+t)
             qEvents = qEvents+1;
         end
 end
@@ -35,7 +35,7 @@ for t = .2:.1:100
         end
     end
     for i=1:qNewLength
-        if (q(i)>=qLambda-t)&&(h(i)<=qLambda+t)
+        if (q(i)>=qLambda-t)&&(q(i)<=qLambda+t)
             qEvents = qEvents+1;
         end
     end
